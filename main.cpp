@@ -34,15 +34,15 @@ int main() {
     Text ColonelSandersDialogue;
     Font arialFont;
 
-    chickenNugget.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/chickennugget.png");
-    ColonelSanders.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/Colonel-Sanders.png");
-    HarryWhite.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/harrydexterwhite.png");
-    JPMorgan.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/JohnPierpontMorgan.png");
-    deathScreenTexture.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/You-Died.jpg");
+    chickenNugget.loadFromFile("./assets/chickennugget.png");
+    ColonelSanders.loadFromFile("./assets/Colonel-Sanders.png");
+    HarryWhite.loadFromFile("./assets/harrydexterwhite.png");
+    JPMorgan.loadFromFile("./assets/JohnPierpontMorgan.png");
+    deathScreenTexture.loadFromFile("./assets/You-Died.jpg");
     deathScreen.setTexture(deathScreenTexture);
     deathScreen.setPosition(712.5, 325);
 
-    if(!arialFont.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/arial.ttf")) {
+    if(!arialFont.loadFromFile("./assets/arial.ttf")) {
         cout << "couldn't load";
     };
     restart.setFont(arialFont);
@@ -68,16 +68,16 @@ int main() {
     ColonelSandersDialogue.setPosition(100,100);
     ColonelSandersDialogue.setColor(Color::Black);
     ColonelSandersDialogue.setString("Hey there Bernie! My name is Harland sanders.\nI started frying chicken in the back of a gas station on Route 25 in 1930.\nThe business soon became successful and by 1963\nmy one restaurant became 600 in the U.S alone.\nMy restaurant was the first sign of a shift in our economy as\nwe slowly turned to consumerism, leaving behind our power as an industrial giant.\nCan you defeat my 11 herbs and spices??");
-    if(!coinTexture.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/25-color.png")){
+    if(!coinTexture.loadFromFile("./assets/25-color.png")){
         cout <<"Couldnt find coin texture";
     };
-    shermanAntiTrustActTexture.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/ClosedScroll.png");
-    moneyBag.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/Money_Bag.png");
-    BossFace.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/joh-d-rockefeller.png");
+    shermanAntiTrustActTexture.loadFromFile("./assets/ClosedScroll.png");
+    moneyBag.loadFromFile("./assets/Money_Bag.png");
+    BossFace.loadFromFile("./assets/joh-d-rockefeller.png");
     //This reference only works on my computer, also the spritesheet is a temporary one, we'll need to make our own.
-    texture.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/tiles_spritesheet.png");
-    playerTexture.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/BernieSandersSprite10.png");
-    badGuyTexture.loadFromFile("/Users/eliwinkelman/ClionProjects/SuperBernieBros/208d9881e946f9a3f58662409cbf3831.jpg");
+    texture.loadFromFile("./assets/tiles_spritesheet.png");
+    playerTexture.loadFromFile("./assets/BernieSandersSprite10.png");
+    badGuyTexture.loadFromFile("./assets/208d9881e946f9a3f58662409cbf3831.jpg");
 
 
 
